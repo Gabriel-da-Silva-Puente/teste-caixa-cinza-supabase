@@ -86,7 +86,13 @@ Foram executados os 5 cenários obrigatórios de testes de caixa cinza. As valid
 
 **Tabela de Cenários:**
 
-![Tabela de Cenários](prints/planilha.png)
+| Cenário | Entrada Utilizada | Resultado Esperado |
+| :--- | :--- | :--- |
+| Login válido | E-mail e senha corretos | Status 200 + access_token |
+| Senha incorreta | E-mail correto, senha errada | Erro de autenticação |
+| Usuário inexistente | E-mail falso, senha correta | Acesso negado |
+| Campos vazios | E-mail e senha em branco | Erro de validação |
+| Credenciais inválidas | API Key incorreta no header | Acesso negado |
 
 **Evidências:**
 

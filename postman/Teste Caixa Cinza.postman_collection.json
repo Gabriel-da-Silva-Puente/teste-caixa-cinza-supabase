@@ -1,0 +1,54 @@
+{
+  "info": {
+    "_postman_id": "092f392a-287f-404f-8ea8-8f1fe0306ae6",
+    "name": "Teste Caixa Cinza",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50833796",
+    "_collection_link": "https://go.postman.co/collection/50833796-092f392a-287f-404f-8ea8-8f1fe0306ae6?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "auth",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "apikey",
+            "value": "{{api_key}}"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/auth/v1/token?grant_type=password",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "auth",
+            "v1",
+            "token"
+          ],
+          "query": [
+            {
+              "key": "grant_type",
+              "value": "password"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
